@@ -15,7 +15,7 @@ class Kubelogin < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:      "2cc8ac23815afccdc9291068c23592b3a6a94a61d29a7a08873e763846af83a5"
   end
 
-  depends_on "go" => :build
+  depends_on "go" => "go@1.26"
   depends_on "kubernetes-cli" => :test
 
   # `test do` block performs OIDC discovery against samples.auth0.com
